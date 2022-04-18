@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/drawable/curve_view.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/activity_home.xml" value="0.152" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/activity_registration.xml" value="0.2" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/activity_schedule_appointment.xml" value="0.264" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/consult_view.xml" value="0.13496376811594202" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/drawer_layout.xml" value="0.13496376811594202" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/fragment_first.xml" value="0.13496376811594202" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/fragment_second.xml" value="0.176" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/fragment_third.xml" value="0.264" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/list_files.xml" value="0.21965579710144928" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/nav_header.xml" value="0.2246376811594203" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/layout/record_tile.xml" value="0.264" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/UGTECH/Desktop/Agile Health/DoctorsApp/HealthApp/app/src/main/res/menu/drawer_menu.xml" value="0.25052083333333336" />
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/activity_home.xml" value="0.1171875" />
+<<<<<<< HEAD
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/fragment_first.xml" value="0.24427083333333333" />
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/fragment_second.xml" value="0.23953013278855975" />
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/fragment_third.xml" value="0.23953013278855975" />
+=======
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/activity_sign_up.xml" value="0.1648148148148148" />
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/fragment_second.xml" value="0.23953013278855975" />
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/fragment_third.xml" value="0.23953013278855975" />
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/list_files.xml" value="0.4803001876172608" />
+        <entry key="..\:/doctor/DoctorsAppUnofficial/HealthApp/app/src/main/res/layout/record_tile.xml" value="0.4803001876172608" />
+>>>>>>> 3a35052c1fd4eed11c4729092e33abb86cbcec37
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

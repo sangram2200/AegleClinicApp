@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink_500">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/name"
+                android:layout_width="135dp"
+                android:layout_height="151dp"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="46dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageOfDoctor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="Patient Name : " />
+
+                <TextView
+                    android:id="@+id/appointmentPatientName"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="Patient Name" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Description : " />
+
+                <TextView
+                    android:id="@+id/descriptionByDoctor"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="Description" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="AppointmentTime :" />
+                <TextView
+                    android:id="@+id/appointmentTime"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="AppointmentTime" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageOfDoctor"
+                android:layout_margin="10dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toEndOf="@+id/name"
+                android:src="@drawable/ellipse_patient"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "835536691110",
+    "project_id": "health-app-bcec3",
+    "storage_bucket": "health-app-bcec3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835536691110:android:cc7ccbcb93cf27f8ddf967",
+        "android_client_info": {
+          "package_name": "com.aghadge.healthapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835536691110-evjbocodhe9839repsgoe33q2gkttt65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDIhRP-NPZKmabKIw-QYt-TpvJ8PIFq0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835536691110-evjbocodhe9839repsgoe33q2gkttt65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

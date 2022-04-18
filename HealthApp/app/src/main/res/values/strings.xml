@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HealthApp</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">WELCOME</string>
+    <string name="register">REGISTRATION</string>
+    <string name="patient"><u>  PATIENT  </u></string>
+    <string name="patientHealth"><u>  PATIENT HEALTH DATA  </u></string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="label">Phone Number</string>
+    <string name="labelPassword">Password</string>
+    <string name="labelOtp">OTP (one time password)</string>
+    <string name="get_otp">Get Otp</string>
+    <string name="registration">REGISTRATION PAGE</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="patient_gender">Patient Gender</string>
+    <string name="patient_emergency_name">Emergency Contact Name</string>
+    <string name="patient_emergency_phone_number">Emergency Contact Number</string>
+    <string name="patient_relation">Relationship</string>
+    <string name="patient_emergency_address">Emergency Address</string>
+    <string name="patient_date_of_birth">Date Of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="no_data">No Appointments Booked</string>
+    <string name="no_data_files">No Health Files Available</string>
+    <string name="emergency_contact_number">Emergency Contact Number</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">op</string>
+    <string name="close">cl</string>
+    <string name="name">Name</string>
+    <string name="weight">Weight in Kgs</string>
+    <string name="Height">Height in cms</string>
+    <string name="BloodGroup">Blood Group</string>
+    <string name="submit">Submit</string>
+</resources>
