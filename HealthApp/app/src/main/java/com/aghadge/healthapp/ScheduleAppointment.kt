@@ -134,7 +134,7 @@ class ScheduleAppointment : AppCompatActivity() {
         val firebaseUser: FirebaseUser = mAuth.currentUser!!
         val userId = firebaseUser.uid;
         val timeStamp = Timestamp(System.currentTimeMillis())
-        val sdf = SimpleDateFormat("ddMMyyyyHHmm")
+        val sdf = SimpleDateFormat("ddMMyyyyHHmmss")
         val date = sdf.format(Date(timeStamp.time))
 
         val appointment = AppointmentData(name , description , appointmentTime)
