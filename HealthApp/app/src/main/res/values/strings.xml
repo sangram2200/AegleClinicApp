@@ -32,4 +32,28 @@
     <string name="Height">Height in cms</string>
     <string name="BloodGroup">Blood Group</string>
     <string name="submit">Submit</string>
+
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="bloodGroups">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+    <string-array name="FAQ">
+        <item>How to Schedule Appointment</item>
+        <item>Whats the time?</item>
+        <item>search for diabetes symptoms</item>
+        <item>search for healthy life tips</item>
+        <item>open official website</item>
+    </string-array>
 </resources>

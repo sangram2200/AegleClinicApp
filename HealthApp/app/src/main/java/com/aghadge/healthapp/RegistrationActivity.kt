@@ -1,29 +1,21 @@
 package com.aghadge.healthapp
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.content.ContentProviderCompat.requireContext
-import com.google.android.material.datepicker.MaterialDatePicker
-import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Intent
 import android.content.pm.ActivityInfo
+import android.os.Bundle
 import android.os.Handler
-import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
+import android.widget.AdapterView.OnItemClickListener
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.aghadge.healthapp.database.Database
 import com.aghadge.healthapp.database.UserData
-
-import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener
+import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.android.synthetic.main.activity_registration.*
 
 
 class RegistrationActivity : AppCompatActivity() {
@@ -53,6 +45,10 @@ class RegistrationActivity : AppCompatActivity() {
         mPatientName = findViewById(R.id.patientName);
         mGender = findViewById(R.id.gender);
         mContactNumber = findViewById(R.id.contact_number);
+
+        val genders = resources.getStringArray(R.array.genders);
+        val arrayAdapter = ArrayAdapter(applicationContext,R.layout.dropdown_item, genders);
+        gender.setAdapter(arrayAdapter);
 
 
         // date picker
@@ -90,6 +86,7 @@ class RegistrationActivity : AppCompatActivity() {
         val gender: String = mGender.text.toString().trim { it <= ' ' }
         val contact: String = mContactNumber.text.toString().trim { it <= ' ' }
         val birthDate: String = mShowSelectedDateText.text.toString()
+
 
         if(name.isEmpty())
         {

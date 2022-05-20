@@ -68,8 +68,8 @@ object BotResponse {
 
             else -> {
                 when (random) {
-                    0 -> "Try asking me something like 'Schedule an Appointment' or 'Open clinic website' "
-                    1 -> "Try asking me something like 'Schedule an Appointment' or 'Open clinic website' "
+                    0 -> "Sorry I don't understand, Try asking me something like 'Schedule an Appointment'"
+                    1 -> "Sorry I don't understand, choose a message from FAQ"
                     2 -> "Try asking me something like 'search fever symptoms' "
                     else -> "error"
                 }

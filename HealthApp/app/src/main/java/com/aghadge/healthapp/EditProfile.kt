@@ -4,10 +4,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.provider.ContactsContract.CommonDataKinds.Email
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.aghadge.healthapp.database.Database
@@ -16,6 +13,7 @@ import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.activity_registration.*
 import java.util.jar.Attributes.Name
 
 
@@ -52,6 +50,9 @@ class EditProfile : AppCompatActivity() {
         mPatientName = findViewById(R.id.name);
         mGender = findViewById(R.id.gender);
         mContactNumber = findViewById(R.id.contact_number);
+        val genders = resources.getStringArray(R.array.genders);
+        val arrayAdapter = ArrayAdapter(applicationContext,R.layout.dropdown_item, genders);
+
 
         val docRef = db.collection("Users").document(firebaseUser.uid)
         docRef.get()
@@ -61,6 +62,7 @@ class EditProfile : AppCompatActivity() {
 
                     mPatientName.setText(document.getString("patientName"))
                     mGender.setText(document.getString("gender"))
+                    gender.setAdapter(arrayAdapter);
                     mShowSelectedDateText.setText(document.getString("birthDate"))
                     mContactNumber.setText(document.getString("contactNumber"))
                 } else {

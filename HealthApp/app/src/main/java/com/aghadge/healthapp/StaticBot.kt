@@ -4,9 +4,11 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aghadge.healthapp.R
@@ -20,6 +22,7 @@ import com.aghadge.healthapp.utils.Constants.RECEIVE_ID
 import com.aghadge.healthapp.utils.Constants.SEND_ID
 import com.aghadge.healthapp.utils.Time
 import kotlinx.android.synthetic.main.activity_static_bot.*
+import kotlinx.android.synthetic.main.fragment_health_data.*
 import kotlinx.coroutines.*
 
 class StaticBot : Fragment() {
@@ -46,6 +49,10 @@ class StaticBot : Fragment() {
 
         val random = (0..3).random()
         customBotMessage("Hello! Today you're speaking with ${botList[random]}, how may I help?")
+        val faq = resources.getStringArray(R.array.FAQ);
+        val arrayAdapter = ArrayAdapter(requireContext(),R.layout.dropdown_item, faq);
+        et_message.movementMethod = ScrollingMovementMethod()
+        et_message.setAdapter(arrayAdapter)
     }
 
 
@@ -90,6 +97,7 @@ class StaticBot : Fragment() {
     private fun sendMessage() {
         val message = et_message.text.toString()
         val timeStamp = Time.timeStamp()
+
 
         if (message.isNotEmpty()) {
             //Adds it to our local list

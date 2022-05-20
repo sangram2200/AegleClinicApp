@@ -3,11 +3,13 @@ package com.aghadge.healthapp
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.text.method.ScrollingMovementMethod
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -50,24 +52,29 @@ class HealthDataFragment : Fragment() {
 
         val firebaseUser: FirebaseUser = mAuth.currentUser!!
 
+        val genders = resources.getStringArray(R.array.bloodGroups);
+        val arrayAdapter = ArrayAdapter(requireContext(),R.layout.dropdown_item, genders);
+        bloodgroup.movementMethod = ScrollingMovementMethod()
+
         val userID = firebaseUser.uid
         db.collection("Users").document(userID).collection("health_data")
             .addSnapshotListener(
                 EventListener { value, error ->
-                if(error != null) {
-                    Log.e("Firestore error", error.message.toString())
-                    return@EventListener
-                }
-                if (value != null) {
-                    for (dc: DocumentChange in value.documentChanges) {
-                        if (dc.type == DocumentChange.Type.ADDED) {
-                            weight.setText(dc.document.data.getValue("weight").toString())
-                            height.setText(dc.document.data.getValue("height").toString())
-                            bloodgroup.setText(dc.document.data.getValue("bloodGroup").toString())
+                    if(error != null) {
+                        Log.e("Firestore error", error.message.toString())
+                        return@EventListener
+                    }
+                    if (value != null) {
+                        for (dc: DocumentChange in value.documentChanges) {
+                            if (dc.type == DocumentChange.Type.ADDED) {
+                                weight.setText(dc.document.data.getValue("weight").toString())
+                                height.setText(dc.document.data.getValue("height").toString())
+                                bloodgroup.setText(dc.document.data.getValue("bloodGroup").toString())
+                            }
                         }
                     }
-                }
-            })
+                    bloodgroup.setAdapter(arrayAdapter)
+                })
 
         mBtnHealth.setOnClickListener {
             editProfile()

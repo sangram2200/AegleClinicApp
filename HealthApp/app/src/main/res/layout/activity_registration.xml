@@ -248,16 +248,17 @@
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/aSignUpOutlinedTextFieldTwo"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/gender">
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <AutoCompleteTextView
                             android:id="@+id/gender"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:lines="1"
+                            android:inputType="none"
                             android:maxLength="21"
                             />
 

@@ -17,18 +17,33 @@
         android:background="#E4E4E4"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/et_message"
-            android:inputType="textShortMessage"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/aSignUpOutlinedTextFieldFour"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight=".5"
-            android:background="@drawable/round_button"
-            android:backgroundTint="@android:color/white"
-            android:hint="Type a message..."
-            android:padding="10dp"
-            android:singleLine="true" />
+            android:layout_weight=".24"
+            android:layout_marginTop="4dp"
+            >
+
+            <AutoCompleteTextView
+                android:background="@drawable/round_button"
+                android:backgroundTint="@android:color/white"
+                android:lines="1"
+                android:id="@+id/et_message"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:hint="Type or choose a message..."
+                android:padding="10dp"
+                android:scrollbars="horizontal"
+                android:overScrollMode="always"
+                android:scrollHorizontally="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btn_send"
@@ -38,9 +53,7 @@
             android:layout_weight="1"
             android:background="@drawable/round"
             android:drawableRight="@drawable/ic_baseline_send_24"
-            android:backgroundTint="#26A69A"
-            android:text="Send"
-            android:textColor="@android:color/white" />
+            android:backgroundTint="#26A69A" />
 
     </LinearLayout>
 
